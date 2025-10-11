@@ -1,0 +1,60 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 80%;
+    /* height: 110%; */
+    /* background: red; */
+    margin: 0 auto;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 110%;
+}
+.home
+{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #777;
+}
+.home nav
+{
+    background-color: red;
+    width: 100%;
+    height: 90px;
+}
+.home nav .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: yellow;
+    height: 100%;
+}
+.home nav .container .logo
+{
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.home nav .container ul
+{
+    list-style: none;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.home nav .container ol
+{
+    display: flex;
+    list-style: none;
+    width: 140px;
+    justify-content: space-between;
+}

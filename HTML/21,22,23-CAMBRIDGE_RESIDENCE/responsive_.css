@@ -1,0 +1,243 @@
+@media only screen and (max-width:1024px){
+    .home nav .container ul,
+    .home nav .container ol{
+       display: none;
+    }
+    .home nav .container ul#search{
+        display: flex;
+        width: calc(100% - 118px);
+        height: 38px;
+    }
+     .home nav .container ul#search>i{
+        font-size: 40px;
+        color: white;
+    }
+     .home nav .container ul#search li{
+        width: calc(100% - 28px);
+        height: 100%;
+        margin-right: 28px;
+    }
+     .home nav .container ul#search li form{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+     .home nav .container ul#search li form input{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        
+        padding: 10px 23px 10px 13px;
+    }
+    .home nav .container ul#search li form input::placeholder{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color:white;
+    }
+     .home nav .container ul#search li form input::-ms-clear,
+     .home nav .container ul#search li form input::-ms-reveal{
+        display: none;
+    }
+     .home nav .container ul#search li form i{
+        position: absolute;
+        top: 10px;
+        right: 14px;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.65);
+    }
+     .home2 .container .stats{
+        flex-direction: column;
+        height: 100%;
+        padding: 60px 0;
+    }
+     .home2 .container .stats .stat{
+        margin-bottom: 30px;
+        width: 100%;
+    }
+     .home2 .container .stats .stat h1{
+        font-size: 24px;
+    }
+     .home2 .container .stats .stat h1 span{
+        font-size: 18px;
+    }
+    .home2 .container .ilus .iluscont .ilus2 .one.last~.one{
+        display: none;
+    }
+      .home2 .container .ilus .iluscont .ilus2 .one{
+          margin: 0 7px;
+          border-radius: 10px;
+    }
+      .home2 .container .ilus .iluscont .ilus1 h1{
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+    }
+      .home2 .container .ilus .iluscont .ilus2{width: fit-content;}
+      .home2 .container .about>.line{width: 236px; height: 3px;}
+      .home2 .container .about>p{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 44px;
+      }
+      .home2 .container .about .theme{
+          display: block;
+          height: 500px;
+      }
+      .home2 .container .about .theme .theme1{
+          width: 100%;
+          height: 50%;
+      }
+      .home2 .container .about .theme .theme1 .part{height: 193px;}
+      .home2 .container .about .theme .theme1 .part p{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .home2 .container>.line{width: 236px;}
+    .map .container img{width: 100%; margin: 30px auto;}
+    #wid{width: 90%;}
+    .home2 .container .about2 .part{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    .home2 .container .about2 .part img{
+        width: 100%;
+        height: 50%;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+    .home2 .container .about2 .part .cont{
+        width: 100%;
+        height: 45%;
+    }
+    .home2 .container .about2 .part .cont p{
+        text-align: justify;
+        margin-bottom: 37px;
+    }
+    .home2 .contact .container .map2{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .home2 .contact .container .map2 .left{width: 100%;}
+    .home2 .contact .container .map2 .left img{width: 100%; border-radius: 30px 30px 0px 0px;}
+    .home2 .contact .container .map2 .left .info{
+        width: 100%;
+        height: 130px;
+        margin-bottom: 50px;
+    }
+    .home2 .contact .container .map2 .right{
+        width: 100%;
+    }
+    .home2 .contact .container .map2 .right form input{width: 100%;}
+    .home2 .contact .container .map2 .right form textarea{width: 100%;}
+    .home2 .contact .container .map2 .right form .submi .ico{
+        top: 120px;
+    }
+    .home2 footer{display: block;}
+    .home2 footer .lists{
+        width: 100%;
+        padding: 0 17px;
+    }
+    .home2 footer .media{width: 100%;}
+    .home2 footer .media .cont{
+        width: 100%;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 17px;
+    }
+}
+@media only screen and (max-width:720px){
+    .home2 .contact .container .map2 .right form input[type="submit"]{
+        width: 107px;
+        height: 55px;
+        border-radius: 15px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .home2 .container .about2 .part .cont p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .home2 .container>.primeText{
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .home2 .container .about>h1{
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 30px;
+      }
+      .home2 .container .about .theme .theme1 .part .ico{
+        width: 40px;
+        height: 39.93px;
+      }
+      .home2 .container .about .theme .theme1 .part .ico img{width: 40px;}
+      .home2 .container .about .theme .theme1 .part h3{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    #wid{width: 236px;}
+    .container{
+        width: calc(100% - 32px);
+    }
+     .home nav .container .logo{
+        width: 70px;
+    }
+     .home nav{
+        height: 63px;
+    }
+     .home nav .container ul#search{
+        width: calc(100% - 88px);
+    }
+     .home nav .container .logo img{
+        width: 45px;
+        border-radius: 0px 0px 10px 10px;
+    }
+     .primeText{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 30px;
+    }
+     .home .container p{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 0;
+    }
+     .btnPrime{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+     .home .container .btnPrime{
+        margin-top: 45px;
+    }
+    .home2 .container .ilus .iluscont{height: 60%;}
+    .home2 .container .ilus .line{
+        display: block;
+        width: 82px;
+        height: 3px;
+    }
+    .home2 .container .about .btnPrime{
+        display: none;
+    }
+}
