@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+ }
+ .home>.left{
+    width: 49%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.341);
+ }
+ .home .right{
+    width: 49%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.341);
+ }
+ .home .right .square{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ .home .right .square .l1{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ .home .right .square .l1 .q{
+    width: 100%;
+    height: 65%;
+    border: 5px solid;
+ }
+ .home .right .square .l1 .q:last-child{
+    height: 30%;
+    border-color: red;
+ }
+ .home .right .square .r1{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ .home .right .square .r1 .k{
+    width: 100%;
+    height: 20%;
+    border:5px solid blue;
+ }
+ .home .right .square .r1 .s{
+    width: 100%;
+    height: 50%;
+    border:5px solid yellowgreen;
+ }
+ .home .right .square .r1 .v{
+    width: 100%;
+    height: 25%;
+    border:5px solid purple;
+ }
+ .home h1{
+    font-size: 70px;
+ }
+ .home a{
+    font-size: 50px;
+    font-weight: 900;
+    color: grey;
+    text-decoration: none;
+ }
+ .main{
+     height: 90%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+ header, footer{
+     width: 100%;
+     height: 5%;
+     border: 5px solid green;
+ }
+ .right1, .left1{
+     height: 90%;
+     width: 45%;
+     border: 5px solid red;
+ }
+ .left1{
+     border: 0;
+     display: flex;
+     flex-direction: column;
+     /* justify-content: space-between;
+     align-items: center; */
+ }
+ .start1{
+     height: 90%;
+     width: 100%;
+     border: 5px solid blue; 
+ }
+ .start1:first-child{margin-bottom: 10px;}
+ .start1:last-child{margin-top: 10px;}

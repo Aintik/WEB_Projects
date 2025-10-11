@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#a1{
+    color: red; background-color: gray;
+}
+#a2{
+    color: rgba(155, 155, 73, 0.905); 
+    background-color: red;
+}
+#a3{
+    color: orange;  background-color: rgba(155, 155, 73, 0.905);
+}
+#a4{
+    color: green; background-color: orange; 
+}
+#a5{
+    color: aqua; background-color: green;
+}
+#a6{
+    color: blue; background-color: aqua;
+}
+#a7{
+    color: blueviolet; background-color: blue;
+}
+#a8{
+    color: violet; background-color: blueviolet;
+}
+#a9{
+    color: black; background-color: violet;
+}
+#a10{
+    color: red; background-color: black;
+}

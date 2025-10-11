@@ -1,0 +1,32 @@
+thead{
+    background-color: rgb(69, 194, 135);
+    color: rgba(255, 255, 255, 0.797);
+}
+.f{border-radius: 5px 0 0 0 ;}
+.l{border-radius: 0 5px 0 0 ;}
+
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 30%;
+    width: auto;
+    height: auto;
+}
+td{
+    padding: 10px 20px;
+    background-color: white;
+}
+th{padding: 10px 20px;}
+
+#tr2{
+    color: rgb(69, 194, 135);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+#tr3{
+    border-bottom: 3px solid rgb(69, 194, 135);
+}
+body{
+    background-color: gray;
+}

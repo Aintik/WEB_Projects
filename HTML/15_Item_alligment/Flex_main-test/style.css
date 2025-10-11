@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.top{
+    width: 100%;
+    height: 20%;
+    background-color: gray;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.t1{
+    width: 300px;
+    height: 50%;
+    background-color: white;
+    border: 2px solid;
+}
+.t2{
+    width: 400px;
+    height: 50%;
+    background-color: white;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.t2sq{
+    width: 50px;
+    height: 30px;
+    border: 3px solid orange;
+}
+.t3{
+    width: 300px;
+    height: 50%;
+    background-color: white;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.t3r{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+}
+.mid{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left{
+    width: 30%;
+    height: 90%;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.right{
+    width: 65%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.lef{
+    width: 45%;
+    height: 95%;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.grad{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, red 25%, yellow 25% 50%, green 50% 75%, blue 75%);
+}
+.l1{
+    width: 90%;
+    height: 30%;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.l1a{
+    width: 35%;
+    height: 95%;
+    border: 2px solid aqua;
+}
+.l1sq{
+    width: 60%;
+    height: 95%;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sq{
+    width: 70%;
+    height: 70%;
+    background-color: green;
+    border: 2px solid;
+}
+.l2{
+    width: 90%;
+    height: 30%;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.cont{
+    width: 95%;
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.round{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+.square1{
+    width: 95%;
+    height: 50%;
+    border: 3px solid green;
+}
+.rig{
+    width: 90%;
+    height: 30%;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rig1{
+    width: 60%;
+    height: 95%;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rig2{
+    width: 35%;
+    height: 95%;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.square2{
+    width: 30%;
+    height: 95%;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.square3{
+    width: 30%;
+    height: 95%;
+    background-color: purple;
+}
+.square3:nth-child(2){background-color: yellow;}
+.square3:nth-child(3){background-color: blue;}
+.square4{
+    width: 20%;
+    height: 95%;
+    border: 2px solid;
+    background-color: lightblue;
+}
+
+
+
+
+
+.footer{
+    width: 95%;
+    height: 20%;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot1{
+    width: 55%;
+    height: 95%;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.square6{
+    height: 95%;
+    width: 15%;
+    background-color: blue;
+    border: 2px solid;
+}
+.square5{
+    width: 40%;
+    height: 95%;
+    margin: 0 10px;
+}
+.pink{
+    width: 100%;
+    height: 32%;
+    background-color: pink;
+    border: 5px solid wheat;
+}
+.sq4{
+    width: 13%;
+    height: 95%;
+    border: 2px solid green;
+}

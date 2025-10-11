@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #222; */
+}
+.nav{
+    width: 100%;
+    height: 90px;
+    background-color: #777;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    width: 80%;
+    height: 60%;
+    border: 5px solid black;
+    background-color: white;
+}
+.body{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.right, .left{
+    width: 40%;
+    height: 80%;
+    border: 5px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left{
+    flex-direction: column;
+
+}
+.rig{
+    height: 80%;
+    width: 30%;
+    border: 5px solid red;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.rig:last-child{
+    border-color: blue;
+    width: 65%;
+}
+.round, .round2{
+    width: 100px;
+    height: 100px;
+    border: 5px solid green;
+    border-radius: 50%;
+}
+.recten{
+    background-color: lightyellow;
+    width: 90%;
+    height: 20%;
+    border: 5px solid wheat;
+}
+.recten_l{
+    height: 25%;
+    width: 95%;
+    border: 5px solid gray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.recten_l:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+}
+.recten1{
+    width: 70%;
+    height: 90%;
+    border: 5px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recten2{
+    width: 90%;
+    height: 50%;
+    border: 5px solid blue;
+}
+.round2{
+    border-color: aqua;
+    width: 80px;
+    height: 80px;
+}

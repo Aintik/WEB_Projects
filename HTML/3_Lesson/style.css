@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;;
+}
+h1{
+    color: red;
+    background-color: greenyellow;
+    padding: 10px;
+    margin: 10px;
+}

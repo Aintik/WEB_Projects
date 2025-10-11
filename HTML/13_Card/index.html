@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(92, 135, 170);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: orange;
+    width: 370px;
+    height: 600px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.2);
+    transition: .3s;
+}
+.card:hover{
+    box-shadow: 0 10px 5px 5px rgba(0, 0, 0, 0.5);
+    height: 620px;
+    padding: 10px 0;
+}
+.card:hover .prof{
+    box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.5);
+}
+.icons i{font-size: 35px;}
+.prof{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.2);
+}
+.text{
+    height: 45%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left, .right{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="card">
+            <div class="prof"><i class="fa-solid fa-user" style="font-size: 70px;"></i></div>
+            <div class="icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-google-plus-g"></i>
+                <i class="fa-solid fa-box"></i>
+            </div>
+            <div class="text">
+                <div class="left">
+                    <h1>51</h1>
+                    <p>Upvoted</p>
+                    <h1>9</h1>
+                    <p>Showcased</p>
+                    <h1>2</h1>
+                    <p>Followers</p>
+                </div>
+                <div class="right">
+                    <h1>9</h1>
+                    <p>Created</p>
+                    <h1>1</h1>
+                    <p>Collections</p>
+                    <h1>5</h1>
+                    <p>Following</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

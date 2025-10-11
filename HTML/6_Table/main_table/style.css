@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    background: linear-gradient(-225deg,#f8345f,#5630a4);
+    height: 100vh;
+    padding: 100px;
+}
+table{
+    background: linear-gradient(90deg,#25c18f,#25b9b9);
+    width: 70%;
+    border-collapse: collapse;
+}
+td,th{
+    padding: 10px 30px;
+    color: white;
+    border-bottom: 1px solid white;
+    text-align: left;
+    font-weight: 300;
+    font-size: 20px;
+}
+.he{
+    border-bottom: 0;
+    text-align: center;
+    font-size: 30px;
+}

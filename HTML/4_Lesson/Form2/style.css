@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{background-color: #ff4a56;}
+form{
+    background-color: white;
+    margin: 60px;
+    margin-top: 40px;
+    border-radius: 30px;
+    width: fit-content;
+}
+h3{
+    color: #ff4a56;
+    padding: 40px 0 0 25px;
+    font-size: 23px;
+    font-weight: 549;
+}
+input{
+    border-color: #ff4a56;
+    margin: 15px;
+    margin-bottom: 0px;
+    border-radius: 30px;
+    border-style: solid;
+    width: 350px;
+    height: 37px;
+}
+::placeholder{
+    color: #ff4a56;
+    padding: 10px;
+}
+.submit{
+    background-color: white;
+    color: #ff4a56;
+    width: 70px;
+    margin: 20px;
+}
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, yellow 0 25%,#161616 25% 50%, tomato 50% 75%, green 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.303);
+    height: fit-content;
+    width: fit-content;
+}
+pre{
+    font-size: 30px;
+}

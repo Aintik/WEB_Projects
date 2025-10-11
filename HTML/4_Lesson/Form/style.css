@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(19deg 100% 72%);
+}
+form{
+    background-color: white;
+    padding: 30px;
+    margin: 70px;
+    border-radius: 20px;
+    width: fit-content;
+    color: gray;
+}
+h2{padding: 0  10px;}
+
+input{
+    background-color: #e9eff8;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10PX;
+    width: 90%;
+    border-color: white;
+    border-style: solid;
+}
+textarea{
+    background-color: #e9eff8;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10PX;
+    border-color: white; border-style: solid;
+    width: 90%;
+}
+#sub{
+    background-color: hsl(19deg 100% 72%);
+    padding: 10px;
+    width: 90%;
+    color: white;
+    margin: 5px;
+    text-align: center;
+    border-bottom: 4px solid #e87c54;
+}
