@@ -1,0 +1,41 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<form method="post" enctype="multipart/form-data">
+  <label for="first" class="form-label">Your name</label>
+  <input type="text" id="first" class="form-control" name="first" />
+  <br /><br />
+  <label for="file" class="form-label">Send img</label>
+  <input
+    type="file"
+    id="file"
+    class="form-control"
+    name="file"
+    multiple="true"
+  />
+  <br /><br />
+  <button type="submit" class="btn btn-primary">Send</button>
+</form>
+
+<br /><hr /><br />
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">First</th>
+      <th scope="col">Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+      <tr>
+        <td>{{first}}</td>
+        <td>
+          {{#each file}}
+            <img src="/uploads/{{this}}" alt="img" high="100px" width="100px" />
+          {{/each}}
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

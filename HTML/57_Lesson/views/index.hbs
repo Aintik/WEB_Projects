@@ -1,0 +1,40 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<form method="post" enctype="multipart/form-data">
+  <label class="form-label mb-3">Title</label>
+  <input type="text" class="form-control" name="title" />
+
+  <label class="form-label">Year</label>
+  <input type="number>" class="form-control mb-3" name="year" />
+
+  <label class="form-label">Poster</label>
+  <input type="file" class="form-control mb-3" name="poster" />
+
+  <label class="form-label">Movie</label>
+  <input type="file" class="form-control mb-3" name="movie" />
+
+  <label class="form-label">Trailer[max=10]</label>
+  <input type="file" class="form-control mb-3" name="trailers" multiple="true" />
+
+  <button type="submit" class="btn btn-primary">Upload</button>
+</form>
+
+<br /><hr /><br />
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Poster</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+      <tr>
+        <td><a href="/movie/{{_id}}" class="btn btn-info">{{title}}</a></td>
+        <td><img src="/uploads/{{poster}}" alt="img" high="100px" width="300px" /></td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

@@ -1,0 +1,13 @@
+<a href="/" class="btn btn-primary mb-3">Back</a>
+<h1>{{data.title}}</h1>
+<p>Welcome to {{data.title}}</p>
+
+<h2>{{data.year}}</h2>
+
+<img src="/uploads/{{data.poster}}" alt="img" />
+<hr>
+<video src="/uploads/{{data.movie}}" width="300px" controls="true"></video>
+<hr>
+{{#each data.trailers}}
+  <video src="/uploads/{{this}}" width="300px" controls="true"></video>
+{{/each}}
