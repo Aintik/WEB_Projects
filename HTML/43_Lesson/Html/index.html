@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-color: darkgrey;
+    padding: 20px;
+}
+.home h1{
+    text-align: center;
+    color: green;
+    font-size: 4em;
+    margin-bottom: 100px;
+}
+.home ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home ul li a{
+    color: red;
+    font-size: 2em;
+    text-decoration: none;
+}
+.home ul li a:hover{
+    color: blue;
+    font-size: 2.5em;
+}
+
+
+.home section{
+    width: 100%;
+    padding: 50px;
+}
+.home section .fuller{
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home section .fuller div{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+}
+    </style>
+</head>
+<body>
+    <div class="home">
+        <h1>Main page</h1>
+        <ul type="none">
+            <li><a href="/contact">Contact page</a></li>
+            <li><a href="/user">User page</a></li>
+        </ul>
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate, blanditiis voluptates quia commodi molestiae odio recusandae odit consequatur sit veritatis officia placeat, aliquam iste minus! Nesciunt repudiandae maiores ipsa?
+            </p>
+            <div class="fuller">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

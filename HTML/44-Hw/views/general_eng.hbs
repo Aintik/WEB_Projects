@@ -1,0 +1,17 @@
+<div class="home">
+  <div class="back">
+    <a href="./index">
+      <i class="fa-solid fa-arrow-left-long"></i>
+    </a>
+  </div>
+  <div class="cards">
+    {{#each eng}}
+      <div class="card">
+        <h1>{{this.last_name}}</h1>
+        <h2>{{this.first_name}}</h2>
+        <p>Price: <span>{{this.price}}</span></p>
+        <p>Students: <span>{{this.student_count}}</span></p>
+      </div>
+    {{/each}}
+  </div>
+</div>

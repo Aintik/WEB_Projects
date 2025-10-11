@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: #222;
+    padding: 30px;
+}
+.home>h1{
+    text-align: center;
+    color: #fff;
+}
+
+/* This abaut Hover Button */
+.btn {
+    width: 210px;
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: .5s;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+.btn:hover {
+    letter-spacing: 0.25em;
+    background: #fa991c;
+    color: #fa991c;
+    box-shadow: 0 0 35px #fa991c;
+}
+.btn::before {
+    content: '';
+    inset: 2px;
+    position: absolute;
+    background: #222;
+}
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+.btn i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+.btn i::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 100%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #222;
+    border: 2px solid #fa991c;
+    transition: .5s;
+}
+.btn:hover i::before {
+    left: 0;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 40px 39px #fa991c;
+}
+.btn i::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #222;
+    border: 2px solid #fa991c;
+    transition: .5s;
+}
+.btn:hover i::after {
+    left: 100%;
+    transform: translateX(-50%) rotate(-45deg);
+    box-shadow: 38px -39px #fa991c;
+}
+
+.home .wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* This about back to home page */
+.back {
+    width: 100%;
+    font-size: 2.5em;
+}
+
+.back:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.back a {
+    color: #fff;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    background-color: #fa991c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* Cards */
+.home .cards{
+    width: 100%;
+    padding: 30px;
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+.home .cards .card{
+    min-width: 250px;
+    min-height: 400px;
+    background: #fa991c;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 10px #111;
+    padding: 30px;
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.home .cards .card>p{
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #111;
+    border-bottom: 2px solid #111;
+}
+.home .cards .card>p span{
+    color: #fff;
+}

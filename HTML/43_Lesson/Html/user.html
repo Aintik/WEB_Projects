@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User page</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-color: darkgrey;
+    padding: 20px;
+}
+.home h1{
+    text-align: center;
+    color: green;
+    font-size: 4em;
+    margin-bottom: 100px;
+}
+.home ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home ul li a{
+    color: red;
+    font-size: 2em;
+    text-decoration: none;
+}
+.home ul li a:hover{
+    color: blue;
+    font-size: 2.5em;
+}
+
+
+.home section{
+    width: 100%;
+    padding: 50px;
+}
+        .home section fieldset{
+    padding: 70px;
+}
+.home section fieldset legend{
+    color: green;
+    font-size: 2em;
+}
+.home section fieldset label{
+    color: red;
+    font-size: 1.5em;
+}
+.home section fieldset input{
+    border: none;
+    color: green;
+    border-radius: 10px;
+    padding: 15px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <h1>User page</h1>
+        <ul type="none">
+            <li><a href="/index">Main pge</a></li>
+            <li><a href="/contact">Contact page</a></li>
+        </ul>
+        <section>
+            <fieldset>
+                <legend>Log In</legend>
+                <form action="">
+                    <label for="">Email</label><br><br>
+                    <input type="email" placeholder="Smth@gmail.com" required><br><br><br><br>
+            
+                    <label for="">Password</label><br><br>  
+                    <input type="password" placeholder="Password" required><br><br><br><br>
+            
+                    <input type="submit" value="Sent">
+                </form>
+            </fieldset>
+        </section>
+    </div>
+</body>
+
+</html>

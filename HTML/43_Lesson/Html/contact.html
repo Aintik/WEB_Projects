@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome Contacts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-color: darkgrey;
+    padding: 20px;
+}
+.home h1{
+    text-align: center;
+    color: green;
+    font-size: 4em;
+    margin-bottom: 100px;
+}
+.home ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home ul li a{
+    color: red;
+    font-size: 2em;
+    text-decoration: none;
+}
+.home ul li a:hover{
+    color: blue;
+    font-size: 2.5em;
+}
+.home section{
+    width: 100%;
+    padding: 50px;
+}
+
+.home section .contact {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.home section .contact h3 {
+    color: green;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.home section .contact ul {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    margin: 30px auto;
+}
+
+.home section .contact ul li {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home section .contact ul li a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-decoration: none;
+}
+
+.home section .contact ul li i {
+    font-size: 6em;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--clr-ico);
+}
+
+.home section .contact ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-bottom: 4px solid var(--clr-ico);
+    transition: .5s ease-in-out;
+    font-family: fontAwesome;
+    text-align: center;
+    line-height: 120px;
+    font-size: 6em;
+    color: var(--clr-ico);
+    overflow: hidden;
+}
+
+.home section .contact ul li:hover::before {
+    height: 100%;
+}
+
+.home section .contact ul li:nth-child(1)::before {
+    content: "\f232";
+}
+
+.home section .contact ul li:nth-child(2)::before {
+    content: '\f16d';
+}
+
+.home section .contact ul li:nth-child(3)::before {
+    content: "\f2c6";
+}
+
+.home section .contact ul li:nth-child(4)::before {
+    content: "\f1fa";
+}
+        </style>
+</head>
+
+<body>
+    <div class="home">
+        <h1>Contact page</h1>
+        <ul type="none">
+            <li><a href="/index">Main page</a></li>
+            <li><a href="/user">User page</a></li>
+        </ul>
+        <section>
+            <div class="contact">
+                <h3>Have you Any Questions ?</h3>
+                <ul type="none">
+                    <li style="--clr-ico: #25d366;">
+                        <a title="Call me" href="tel:+998998097245"></a>
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </li>
+                    <li style="--clr-ico: #dd2a7b;">
+                        <a target="_blank" title="My instagram" href="https://www.instagram.com/abror_035/"></a>
+                        <i aria-hidden="true" class="fa fa-instagram"></i>
+                    </li>
+                    <li style="--clr-ico: #1da1f2;">
+                        <a target="_blank" title="Chat me" href="https://t.me/abror_035"></a>
+                        <i aria-hidden="true" class="fa fa-telegram"></i>
+                    </li>
+                    <li style="--clr-ico: #ff0000;">
+                        <a target="_blank" title="My Email" href="mailto:abrorashrafhonov31@gmail.com"></a>
+                        <i aria-hidden="true" class="fa fa-at"></i>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
