@@ -1,1 +1,1 @@
-This repo is my backup for my web projects
+This repo is a backup for my web projects
