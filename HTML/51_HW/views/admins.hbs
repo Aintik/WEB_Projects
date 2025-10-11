@@ -1,0 +1,36 @@
+<h1>{{title}}</h1>
+<a class="btn btn-primary" href="/">To
+  <span class="text-danger">Main</span>
+  page</a>
+<br /><br />
+<a class="btn btn-danger" href="/admins/add">Add new admin</a>
+<br /><br />
+
+{{#if data}}
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Password</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each data}}
+        <tr class="table-primary">
+          <th scope="row">{{first}}</th>
+          <td>{{last}}</td>
+          <td>{{email}}</td>
+          <td>{{password}}</td>
+          <td><a class="btn btn-danger" href="/admins/adminDel/{{_id}}">Delete</a></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+{{else}}
+  <h2>There no admin</h2>
+
+{{/if}}

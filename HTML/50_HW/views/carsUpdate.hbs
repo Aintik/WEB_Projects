@@ -1,0 +1,58 @@
+<h1>Update info</h1>
+<a class="btn btn-primary mb-5" href="/cars">To cars page</a>
+<form method="POST">
+  <!-- 2 column grid layout with text inputs for the first and last names -->
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+        <input
+          value = "{{dataOld.mark}}"
+          name="mark"
+          type="text"
+          id="form3Example1"
+          class="form-control"
+        />
+        <label class="form-label" for="form3Example1">Mark</label>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-outline">
+        <input
+          value = "{{dataOld.color}}"
+          name="color"
+          type="text"
+          id="form3Example2"
+          class="form-control"
+        />
+        <label class="form-label" for="form3Example2">Color</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 column grid layout with text inputs for the first and last names -->
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+        <input
+          value = "{{dataOld.type}}"
+          name="type"
+          type="text"
+          id="form3Example1"
+          class="form-control"
+        />
+        <label class="form-label" for="form3Example1">Type</label>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-outline">
+        <input
+          value = "{{dataOld.key}}" name="key" type="text" id="form3Example2" class="form-control" />
+        <label class="form-label" for="form3Example2">Key</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+
+</form>

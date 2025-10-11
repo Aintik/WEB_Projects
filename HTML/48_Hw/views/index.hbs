@@ -1,0 +1,26 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+<a class="btn btn-primary my-3" href="/add">Add new user</a>
+
+<table class="table table-bordered border-primary">
+  <thead>
+    <tr>
+      <th scope="col">#id</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Age</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+    <tr>
+      <th scope="row">{{id}}</th>
+      <td>{{firstName}}</td>
+      <td>{{lastName}}</td>
+      <td>{{age}}</td>
+      <td>{{email}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
