@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 100px;
+    background: wheat;
+}
+.home .place{
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .place .item{
+    width: 80%;
+    height: 80%;
+    background: green;
+}

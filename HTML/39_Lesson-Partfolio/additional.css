@@ -1,0 +1,325 @@
+:root{
+    --back: #023246;
+    --shadow: #000d12;
+    --second: #fa991c;
+    --letters: #f6f6f6;    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home2{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(0deg, var(--back), var(--back));
+    padding: 30px;
+    counter-reset: cards;
+}
+
+/* This abaut Hover Button */
+    .btn {
+        width: 210px;
+        position: relative;
+        background: #444;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+        padding: 10px 30px;
+        transition: .5s;
+        font-family: sans-serif;
+        margin-top: 50px;
+    }
+    .btn:hover {
+        letter-spacing: 0.25em;
+        background: var(--second);
+        color: var(--second);
+        box-shadow: 0 0 35px var(--second);
+    }
+    .btn::before {
+        content: '';
+        inset: 2px;
+        position: absolute;
+        background: var(--back);
+    }
+    .btn span {
+        position: relative;
+        z-index: 1;
+    }
+    .btn i {
+        position: absolute;
+        inset: 0;
+        display: block;
+    }
+    .btn i::before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: 100%;
+        transform: translateX(-50%);
+        width: 10px;
+        height: 10px;
+        background: var(--back);
+        border: 2px solid var(--second);
+        transition: .5s;
+    }
+    .btn:hover i::before {
+        left: 0;
+        transform: translateX(-50%) rotate(45deg);
+        box-shadow: 40px 39px var(--second);
+    }
+    .btn i::after {
+        content: '';
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        transform: translateX(-50%);
+        width: 10px;
+        height: 10px;
+        background: var(--back);
+        border: 2px solid var(--second);
+        transition: .5s;
+    }
+    .btn:hover i::after {
+        left: 100%;
+        transform: translateX(-50%) rotate(-45deg);
+        box-shadow: 38px -39px var(--second);
+    }
+
+/* This about back to home page */
+    .home2 .back{
+        width: 100%;
+        font-size: 2.5em;
+    }
+    .home2 .back:last-child{
+        display: flex;
+        justify-content: center;
+    }
+    .home2 .back a{
+        color: var(--letters);
+        text-decoration: none;
+        width: 60px;
+        height: 60px;
+        background-color: var(--second);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+/* This about cards */
+    .latest {
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 70px;
+        position: relative;
+        color: #fff;
+    }
+    .latest div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .latest div .part {
+        width: 30%;
+        height: 300px;
+        background: var(--back-img) no-repeat center / cover;
+        border-radius: 10px;
+        transition: .4s;
+        counter-increment: cards;
+    }
+    .latest div .part:hover {
+        transform: scale(1.05);
+    }
+    .latest div .part a {
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        text-decoration: none;
+    }
+    .latest .counter{
+        position: absolute;
+    }
+    .latest .counter::after{
+        content: counter(cards);
+    }
+
+/* Lines */
+    .line {
+        background: var(--second);
+        width: 50px;
+        height: 4px;
+        margin-top: -25px;
+    }
+    .line2 {
+        height: 4px;
+        width: 25px;
+        margin-top: -25px;
+        background: var(--second);
+    }
+
+/* This about NEON Text */
+    .home .hi div .neon {
+        font-family: sans-serif;
+        position: relative;
+        width: 600px;                                                 /*Responsive*/
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .home .hi div .neon h2 {
+        color: var(--letters);
+        font-size: 2em;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-shadow: 0 0 10px var(--second),
+        0 0 20px var(--second);
+    }
+    .home .hi div .neon .lightbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 100%;
+        border-radius: 10px;
+        background: #fff;
+        z-index: 2;
+        box-shadow: 0 0 10px var(--second),
+                0 0 20px var(--second);
+        animation: animatelightbar 5s linear 0s infinite;
+    }
+    @keyframes animatelightbar {
+
+        0%,
+        5% {
+            transform: scaleY(0) translateX(0);
+        }
+
+        10% {
+            transform: scaleY(1) translateX(0);
+        }
+
+        90% {
+            transform: scaleY(1) translateX(calc(600px - 10px));
+        }
+
+        95%,
+        100% {
+            transform: scaleY(0) translateX(calc(600px - 10px));
+        }
+    }
+    .home .hi div .neon .topLayer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--back);
+        animation: animatetopLayer 10s linear infinite;
+    }
+    @keyframes animatetopLayer {
+
+        0%,
+        2.5% {
+            transform: translateX(0);
+        }
+
+        5% {
+            transform: translateX(0);
+        }
+
+        45% {
+            transform: translateX(100%);
+        }
+
+        47.5%,
+        50% {
+            transform: translateX(100%);
+        }
+
+        50.001%,
+        52.5% {
+            transform: translateX(-100%);
+        }
+
+        55% {
+            transform: translateX(-100%);
+        }
+
+        95% {
+            transform: translateX(0%);
+        }
+
+        97.5%,
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+/* Responsive NavBar */
+
+.home ol {
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 12;
+}
+.home ol li {
+    width: 50px;
+    height: 5px;
+    border-radius: 10px;
+    background: #fff;
+    transition: 0.8s;
+    transform: rotate(360deg);
+}
+.menu {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(163, 163, 163, 0.753), rgba(161, 161, 161, 0.137));
+    backdrop-filter: blur(5px);
+    position: fixed;
+    left: -200%;
+    bottom: 0;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+.home .menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.home .menu ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid var(--second);
+    padding: 10px;
+    border-radius: 10px;
+}
+.home .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+.home .menu ul li i {
+    font-size: 20px;
+    margin-right: 20px;
+    color: #fa991c;
+}

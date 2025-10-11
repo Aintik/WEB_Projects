@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.home form{
+    width: 95%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home form div input{
+    height: 50px;
+    min-width: 400px;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.home form div button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: rgba(35, 159, 159, 0.827);
+    font-size: 30px;
+}
+.home>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.home .place{
+    width: 20%;
+    height: 100%;
+    background: rgba(35, 159, 159, 0.827);
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+.home .place .text{
+    min-width: 90%;
+    padding: 15px;
+    background: white;
+    border-radius: 30px;
+}
+.added{
+    display: flex;
+    gap: 70px;
+    font-size: 20px;
+}
+.here{
+    width: 95%;
+    height: 60px;
+    border: 5px solid yellow;
+}
+.bin{
+    width: 40px;
+    height: 60px;
+    /* background: red; */
+}
