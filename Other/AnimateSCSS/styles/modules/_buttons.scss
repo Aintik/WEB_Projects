@@ -1,0 +1,29 @@
+@use '../vars' as *;
+
+.btn{
+  display: inline-block;
+  font-size: 23px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  background-color: $accent;
+  border-radius: 100px;
+  text-align: center;
+  color: #fff;
+  border: 2px solid;
+  border-color: $accent;
+  box-shadow: 0 30px 50px 0 rgba(#FF5353, .34);
+  padding: 22px 46px 23px;
+  min-width: 230px;
+
+  &--ghost{
+    font-size: 20px;
+    font-family: Muli, sans-serif;
+    font-weight: 700;
+    line-height: 27px;
+    background-color: transparent;
+    border-color: #fff;
+    min-width: auto;
+    box-shadow: none;
+    padding: 14px 33px;
+  }
+}

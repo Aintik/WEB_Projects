@@ -1,0 +1,43 @@
+
+.svg-animate-box{
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+//Creating aos animation
+[data-aos="c-rotate"] {
+  transform-box: fill-box;
+  transform-origin: center;
+  
+  opacity: 0;
+  transform: translateY(700px) rotate(500deg);
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
+}
+
+[data-aos="fill-right"] {
+  transform-box: fill-box;
+  transform-origin: left;
+
+  transform: scaleX(0);
+  opacity: 0;
+  &.aos-animate{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+[data-aos="fill-circle"] {
+  transform-box: fill-box;
+  transform-origin: left;
+
+  stroke-dasharray: 1% 136%;
+
+  &.aos-animate {
+    stroke-dasharray: 136% 136%;
+  }
+}

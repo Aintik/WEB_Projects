@@ -1,0 +1,37 @@
+@use '../mixins/media' as *;
+@use '../vars' as *;
+
+.decor-circle{
+  position: absolute;
+  right: 63%;
+  top: -30%;
+  min-width: 100%;
+  height: auto;
+  transform: rotate(434deg);
+
+  @include media(1200){
+    display: none;
+  }
+}
+
+.decor-circle-2 {
+  position: absolute;
+  top: -34%;
+  left: 36%;
+  min-width: 100%;
+  height: auto;
+
+  @include media(1200) {
+      display: none;
+    }
+}
+
+.decor-7{
+  position: absolute;
+  bottom: -50%;
+  left: 66%;
+
+  @include media(1200) {
+      display: none;
+    }
+}

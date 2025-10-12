@@ -1,0 +1,44 @@
+@use '../vars' as *;
+@use '../mixins/media' as *;
+
+
+.page-title{
+  color: $dark;
+  line-height: 1.29;
+  font-family: 'Muli', sans-serif;
+  font-size: 75px;
+  font-weight: 900;
+
+  @include media(800){
+    font-size: 40px;
+  }
+}
+.page-subtitle{
+  font-size: 20px;
+  color: $gray;
+  line-height: 1.75;
+
+  @include media(580) {
+      font-size: 18px;
+    }
+}
+
+.sect-title {
+  font-family: 'Muli', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $dark;
+
+  @include media(1200) {
+      font-size: 40px;
+    }
+
+  @include media(800) {
+      font-size: 36px;
+    }
+  
+  @include media(580) {
+    font-size: 30px;
+  }
+}

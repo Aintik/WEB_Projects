@@ -1,0 +1,48 @@
+@use 'fonts' as *;
+@use 'vars' as *;
+@use 'mixins/media';
+@use 'modules/logo';
+@use 'modules/buttons';
+@use 'modules/header';
+@use 'modules/titles';
+@use 'modules/form';
+@use 'modules/company';
+@use 'modules/animation';
+@use 'modules/sect';
+@use 'modules/benefits';
+@use 'modules/description';
+@use 'modules/decor';
+@use 'modules/reviews';
+@use 'modules/footer';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 700;
+  color: $dark;
+}
+.container{
+  max-width: 1630px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container-inner{
+  max-width: 1160px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.out{
+  overflow: hidden
+}
+
+

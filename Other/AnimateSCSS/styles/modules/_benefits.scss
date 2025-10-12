@@ -1,0 +1,35 @@
+@use '../mixins/media' as *;
+@use '../vars' as *;
+
+.benefits{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 107px 0;
+
+  @include media(800) {
+    padding: 45px 0;
+  }
+}
+.benefit{
+  flex: 1 0 250px;
+  padding: 0 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: $dark;
+
+
+  &__img{
+    margin-bottom: 20px;
+  }
+  &__title{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  &__description{
+    font-size: 16px;
+    color: $gray;
+    line-height: 26px;
+  }
+}

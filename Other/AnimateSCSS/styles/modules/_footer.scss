@@ -1,0 +1,56 @@
+@use '../mixins/media' as *;
+@use '../vars' as *;
+
+.footer {
+  padding: 160px 0 180px;
+  position: relative;
+
+  @include media(800){
+    padding: 60px 0 60px;
+  }
+
+  &::before{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 178px;
+    top: 0;
+    left: 0;
+    background-image: url(../images/footer-decor.svg);
+    background-size: cover;
+
+    @include media(1200) {
+      display: none;
+    }
+  }
+
+  &__container-inner{
+    position: relative;
+    z-index: 4;
+  }
+
+  &__sect-title, &__sect-subtitle{
+    text-align: center;
+  }
+  &__sect-title{
+    margin-bottom: 20px;
+  }
+  &__sect-subtitle{
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 1.29;
+    margin-bottom: 76px;
+
+    @include media(800){
+      font-size: 20px;
+    }
+  }
+
+  &__form{
+    max-width: 666px;
+    margin: 0 auto;
+  }
+
+
+}

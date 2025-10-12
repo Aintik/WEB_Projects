@@ -1,0 +1,55 @@
+@use '../mixins/media' as *;
+@use '../vars' as *;
+
+.description-card {
+  padding: 125px 0 160px;
+
+
+  @include media(800) {
+      padding: 40px 0 60px;
+    }
+
+
+  &__title{
+    margin-bottom: 22px;
+  }
+  &__text, &__link{
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 700;
+    font-family: Muli, sans-serif;
+  }
+  &__text{
+    color: $gray;
+    margin-bottom: 60px;
+
+    @include media(800) {
+      margin-bottom: 30px;
+    }
+  }
+  &__link{
+    color: $dark;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &::after{
+      content: '';
+      background-image: url(../images/long-arrow-pointing-to-the-right.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 26px;
+      height: 12px;
+      display: inline-block;
+      margin-left: 15px;
+      transition: transform .25s;
+    }
+    
+    &:hover, &:active{
+      text-decoration: none;
+
+      &::after{
+        transform: translateX(10px);
+      }
+    }
+  }
+}

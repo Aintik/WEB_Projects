@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,regular,300italic);
+//@import url(https://fonts.googleapis.com/css?family=Mulish:regular,500,600,700,800,900,italic);
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-style: normal;
+  src: url(../fonts/Montserrat-Light.ttf) format('ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Muli;
+  font-weight: 900;
+  font-style: normal;
+  src: url(../fonts/Muli-Black.woff2) format('woff2'),
+    url(../fonts/muli/Muli-Black.ttf) format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: Muli;
+  font-weight: 800;
+  font-style: normal;
+  src: url(../fonts/muli/Muli-ExtraBold.ttf) format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: Muli;
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/muli/Muli-Bold.ttf) format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: Muli;
+  font-weight: 400;
+  font-style: italic;
+  src: url(../fonts/muli/Muli-Italic.ttf) format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: Muli;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/muli/Muli.ttf) format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: Muli;
+  font-weight: 300;
+  font-style: normal;
+  src: url(../fonts/muli/Muli-Light.ttf) format('ttf');
+  font-display: swap;
+}

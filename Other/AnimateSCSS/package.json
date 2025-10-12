@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "sass styles/app.scss dist/app.css --no-source-map"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.93.2"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}
