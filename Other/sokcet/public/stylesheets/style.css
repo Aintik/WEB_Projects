@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.wrapper ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.wrapper ul li{
+  margin: 10px 0px;
+}
+#logs{
+  width: 300px;
+  height: 100px;
+  background: wheat;
+  border: 3px solid #3e3e;
+  border-radius: 10px;
+  padding: 5px;
+  overflow-y: scroll;
+}
+#logs>h5{
+  text-align: center;
+}
+#logs>p{
+  margin-bottom: 4px;
+}
+ul#main{
+  width: 300px;
+  height: 600px;
+  background-color: #777;
+  border-radius: 10px;
+  list-style: none;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: scroll;
+}
+ul#main>li{
+  width: 100%;
+  min-height: 30px;
+  padding: 0px 3px 6px 3px;
+  border-bottom: 2px solid #111;
+}
+ul#main>li>b{
+  color: darkorange;
+}
+ul#main>li.mine{
+  text-align: right;
+}
+ul#main>li.mine::after{
+  content: ' :Me';
+  color: darkorange;
+}
+

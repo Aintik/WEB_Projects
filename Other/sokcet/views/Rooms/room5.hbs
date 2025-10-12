@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="wrapper mb-4" style="align-items: center;">
+    <h1>Room 5</h1>
+    <div><a href="/" class="btn btn-danger" id="home">Back</a></div>
+  </div>
+  <form class="row g-2">
+    <div class="col-auto"><input class="form-control mb-3" type="text" id="name" placeholder="Enter your name" /></div>
+    <div class="col-auto"><button class="btn btn-warning mb-4" type="button" id="btnJoin">Join</button></div>
+  </form>
+  <div class="wrapper">
+    <button class="btn btn-danger mb-4" type="button" id="btnClear">Clear</button>
+    <h6 id="nik"></h6>
+  </div>
+  <div id="logs">
+    <h5>Warnings:</h5>
+  </div>
+  <div class="wrapper">
+    <ul id="otherMes"></ul>
+    <ul id="myMes"></ul>
+  </div>
+  <ul id="main"></ul>
+  <form class="row g-2">
+    <div class="col-auto"><input class="form-control mb-3" type="text" id="inp" placeholder="Type the message" /></div>
+    <div class="col-auto"><button class="btn btn-primary" type="button" id="btn">Send</button></div>
+  </form>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/javascripts/makeRoomFunc.js"></script>
+<script>makeRoom('room5')</script>
