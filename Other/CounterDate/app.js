@@ -84,4 +84,14 @@ function initCountdown(parent, to) {
 
 }
 
-initCountdown(".countdown", "12 Aug 2022");
+// add 10 days from today
+const today = new Date();
+const newDate = new Date(today);
+newDate.setDate(today.getDate() + 10);
+const options = { day: "2-digit", month: "short", year: "numeric" };
+const formattedDate = newDate
+  .toLocaleDateString("en-GB", options)
+  .replace(",", "");
+
+// Input when to count in format "12 Aug 2027"
+initCountdown(".countdown", formattedDate);
