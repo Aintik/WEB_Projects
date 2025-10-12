@@ -1,0 +1,10 @@
+<div class="home-container">
+  <h1>Welcome to Socket Rooms</h1>
+  <p>Select a room to join:</p>
+  <ul class="room-list">
+    {{#each rooms}}
+    <li><a href="/room/{{this}}">Room {{this}}</a></li>
+    {{/each}}
+  </ul>
+</div>
+<script src="/socket.io/socket.io.js"></script>

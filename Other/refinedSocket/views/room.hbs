@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <div class="top">
+    <h1>Room {{roomId}}</h1>
+    <a href="/" class="btn">Back</a>
+  </div>
+  <div id="logs">
+    <h5>Logs</h5>
+    <p>Connected to {{roomId}}</p>
+  </div>
+
+  <ul id="main"></ul>
+
+  <form id="chatForm" class="chat-form">
+    <input id="msg" type="text" placeholder="Type your message..." required>
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+<script>
+  const ROOM_ID = "{{roomId}}";
+</script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/javascripts/makeRoomFunc.js"></script>

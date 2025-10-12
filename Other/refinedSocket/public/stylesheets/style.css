@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Home page */
+.home-container {
+  text-align: center;
+}
+
+.room-list {
+  list-style: none;
+  margin-top: 1rem;
+  min-height: 200px;
+  display: flex;
+  gap: 5px;
+}
+
+.room-list li {
+  margin: 10px 0;
+}
+
+.room-list a {
+  text-decoration: none;
+  background: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.room-list a:hover {
+  background: #0056b3;
+}
+
+/* Chat room */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.top .btn {
+  text-decoration: none;
+  background: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+#logs {
+  background: #fff4e6;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 1rem 0;
+  height: 100px;
+  overflow-y: auto;
+}
+
+ul#main {
+  background: #777;
+  border-radius: 8px;
+  padding: 10px;
+  list-style: none;
+  color: white;
+  min-height: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+ul#main li {
+  margin-bottom: 8px;
+  word-wrap: break-word;
+}
+
+ul#main li.mine {
+  text-align: right;
+  color: darkorange;
+}
+
+.chat-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chat-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.chat-form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.chat-form button:hover {
+  background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .wrapper {
+    width: 95%;
+  }
+  ul#main {
+    min-height: 250px;
+  }
+}
