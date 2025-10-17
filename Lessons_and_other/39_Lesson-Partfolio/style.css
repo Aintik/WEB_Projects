@@ -74,7 +74,7 @@ body{
     position: absolute;
     inset: 0;
     transition: .5s;
-    background: url(img.jpd);
+    background: url("./picturesOfWorks/1.png");
     background-size: cover;
 }
 .home .hi .myphoto span:nth-child(1){
@@ -351,4 +351,5 @@ body{
 /* 
     Responsive,
     Photo animate,
+
 */
