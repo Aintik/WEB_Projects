@@ -1,0 +1,54 @@
+create file mySnips.code-snippets
+
+{
+	"@media": {
+		"prefix": "@media",
+		"scope": "css",
+		"body": [
+			"@media only screen and (max-width: $1px) {",
+			"  $2",
+			"}"
+		],
+		"description": "Вставить медиа запрос"
+	},
+	"Sep-Html": {
+		"scope": "html",
+		"prefix": "sp",
+		"body": [
+			"<!-- ----------------------$1------------------------------ -->",
+			"$0"
+		],
+		"description": "Comment-separator"
+	},
+	"Sep-Css": {
+		"scope": "css",
+		"prefix": "sp",
+		"body": [
+			"/* --------------------------$1---------------------------- */",
+			"$0"
+		],
+		"description": "Comment-separator"
+	},
+	"Express pkg": {
+		"scope": "javascript, typescript",
+		"prefix": "express",
+		"body": [
+			"const express = require('express');",
+			"const app = express()",
+			"",
+			"const path = require('path');",
+			"app.set(\"views\", path.join(__dirname, \"views\"));",
+			"app.set(\"view engine\", \"hbs\");",
+			"",
+			"",
+			"app.get('/', (req, res) => {",
+			"\tres.send('hello world')",
+			"})",
+			"",
+			"",
+			"app.listen(3000, () => console.log('3000 port opened'))",
+			"$0"
+		],
+		"description": "Creates express module hello world"
+	}
+}
