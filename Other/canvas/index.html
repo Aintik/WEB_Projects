@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Canvas</title>
-  <script src="./script.js" defer></script>
-</head>
-<body style="margin: 0;">
-  <canvas id="canvas" style="display: block;">Your browser is not supported</canvas>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        touch-action: none;
+      }
+      #canvas {
+        display: block;
+        background-color: white;
+      }
+      #controls {
+        position: fixed;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        z-index: 10;
+      }
+      button {
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      button:active {
+        background-color: #3e8e41;
+      }
+      #instructions {
+        position: fixed;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        color: #333;
+        font-size: 14px;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="instructions">
+      Draw on the canvas. Use buttons below or keyboard shortcuts
+    </div>
+    <canvas id="canvas">Your browser is not supported</canvas>
+    <div id="controls">
+      <!--<button id="saveBtn">Save (S)</button>
+    <button id="replayBtn">Replay (R)</button>-->
+      <button id="clearBtn">Clear (C)</button>
+    </div>
+    <script src="./script.js" defer></script>
+  </body>
 </html>
